@@ -15,5 +15,7 @@ def walk(dirname):
             walk(path)
 
 walk('.')
-
-
+try:
+    fin = open('bad_file')
+except:
+    print('Something went wrong')
